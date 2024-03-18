@@ -1,4 +1,4 @@
-const numSpheres = 30; // Número de esferas
+const numSpheres = 10; // Número de esferas
 const background = document.querySelector('.background');
 
 // Crear las esferas
