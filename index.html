@@ -22,7 +22,19 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script>
+  const colors = ['#21618C', '#3498DB', '#1ABC9C', '#27AE60', '#F1C40F', '#F39C12', '#D35400', '#E74C3C', '#C0392B', '#9B59B6', '#8E44AD', '#34495E', '#2C3E50', '#7F8C8D', '#95A5A6'];
+  const background = document.querySelector('.background');
+  let index = 0;
+
+  function changeColor() {
+    index = (index + 1) % colors.length;
+    background.style.backgroundColor = colors[index];
+  }
+
+  setInterval(changeColor, 2000);
+</script>
+
 </body>
 </html>
 
