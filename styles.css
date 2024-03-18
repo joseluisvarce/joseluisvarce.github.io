@@ -59,18 +59,27 @@ body {
   border-radius: 50%;
   pointer-events: none;
   z-index: -1;
-  animation: float 10s linear infinite;
+  animation: float 10s linear infinite, fadeOut 10s ease-in infinite;
 }
 
 @keyframes float {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) translateX(0);
   }
   50% {
-    transform: translateY(-100px) rotate(360deg);
+    transform: translateY(-100px) translateX(100px);
   }
   100% {
-    transform: translateY(0) rotate(720deg);
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
