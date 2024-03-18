@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #87CEEB, #00BFFF, #ADD8E6, #F0F8FF, #FFFFFF, #F0F8FF, #ADD8E6, #00BFFF, #87CEEB);
+  background: linear-gradient(to bottom, #007FFF, #00FF00);
   animation: gradient 10s ease infinite;
 }
 
@@ -56,4 +56,5 @@ body {
   width: 30px;
   vertical-align: middle;
 }
+
 
