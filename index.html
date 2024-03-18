@@ -9,7 +9,142 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(45deg, #FFC0CB, #87CEEB, #FFD700, #32CD32, #BA55D3, #FFA500, #20B2AA, #9370DB, #FF6347, #00CED1, #FF1493, #4169E1, #FF69B4, #00FFFF, #FF8C00);
+      background: linear-gradien<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose Luis V. Arce</title>
+  <link rel="icon" href="favicon.ico">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #87CEEB, #00BFFF, #FFFFFF, #F0F8FF, #ADD8E6, #00CED1, #B0E0E6, #87CEFA);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    #titulo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    #subtitulo {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    #contacto {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    #whatsappQR {
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    #instagram {
+      width: 50px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      width: 250px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    #mensaje-enviado {
+      display: none;
+      margin-top: 20px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <img id="logo" src="logo.png" alt="Logo">
+  <div id="titulo">Jose Luis V. Arce</div>
+  <div id="subtitulo">TECNICO INFORMATICO</div>
+  <div id="contacto">Contactar <a href="https://wa.me/638736628" target="_blank">638 736628</a></div>
+  <img id="whatsappQR" src="whatsapp_qr.png" alt="WhatsApp QR">
+  <form id="contact-form" action="mailto:joseluisv.arce15@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="nombre" placeholder="Nombre">
+    <input type="email" name="email" placeholder="Correo Electrónico">
+    <textarea name="mensaje" placeholder="Mensaje"></textarea>
+    <input type="submit" value="Enviar">
+  </form>
+  <div id="mensaje-enviado">¡Mensaje enviado!</div>
+  <a href="https://instagram.com/tu_perfil" target="_blank"><img id="instagram" src="instagram_logo.png" alt="Instagram"></a>
+</div>
+
+<script>
+  document.getElementById("contact-form").onsubmit = function() {
+    document.getElementById("mensaje-enviado").style.display = "block";
+    return false;
+  };
+</script>
+
+</body>
+</html>
+t(45deg, #FFC0CB, #87CEEB, #FFD700, #32CD32, #BA55D3, #FFA500, #20B2AA, #9370DB, #FF6347, #00CED1, #FF1493, #4169E1, #FF69B4, #00FFFF, #FF8C00);
       background-size: 400% 400%;
       animation: gradient 15s ease infinite;
     }
