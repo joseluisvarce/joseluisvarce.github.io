@@ -1,63 +1,65 @@
-.sphere {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #21618C;
   z-index: -1;
-  animation: float 10s linear infinite, fadeOut 10s ease-in infinite;
+  animation: changeBackground 2s linear infinite alternate;
 }
 
-@keyframes float {
+@keyframes changeBackground {
   0% {
-    transform: translateY(0) translateX(0);
-  }
-  50% {
-    transform: translateY(-100px) translateX(100px);
+    background-color: #21618C;
   }
   100% {
-    transform: translateY(0) translateX(0);
+    background-color: #C0392B; /* Cambia a cualquier color que desees */
   }
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.sphere:nth-child(odd) {
-  width: 20px;
-  height: 20px;
-  animation-duration: 8s;
+.content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.sphere:nth-child(even) {
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.titulo {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.qr {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.instagram-logo {
   width: 30px;
-  height: 30px;
-  animation-duration: 12s;
+  vertical-align: middle;
 }
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jose Luis V. Arce - Técnico Informático</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="fondo">
-    <div class="marco">
-      <h1>Jose Luis V. Arce</h1>
-      <h2>Técnico Informático</h2>
-      <a href="https://api.whatsapp.com/send?phone=638736628&text=Hola%2C%20he%20visto%20tu%20web%20y%20me%20gustaría%20contactarte">
-        <img src="qr-whatsapp.png" alt="QR WhatsApp">
-        <p>638 736 628</p>
-      </a>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
