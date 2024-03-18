@@ -28,6 +28,7 @@
   let index = 0;
 
   function changeColor() {
+    background.style.transition = 'background-color 1s ease-in-out';
     index = (index + 1) % colors.length;
     background.style.backgroundColor = colors[index];
   }
