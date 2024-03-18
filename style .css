@@ -1,0 +1,80 @@
+/* Variables */
+$color-primario: #007bff;
+$color-secundario: #fff;
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: $color-secundario;
+}
+
+/* Fondo */
+.fondo {
+  min-height: 100vh;
+  background-color: $color-primario;
+  background-image: linear-gradient(to right, $color-primario 0%, $color-primario 50%, #009688 50%, #009688 100%);
+  animation: cambio-color 10s infinite;
+}
+
+@keyframes cambio-color {
+  0% {
+    background-image: linear-gradient(to right, $color-primario 0%, $color-primario 50%, #009688 50%, #009688 100%);
+  }
+  50% {
+    background-image: linear-gradient(to right, #009688 0%, #009688 50%, #4caf50 50%, #4caf50 100%);
+  }
+  100% {
+    background-image: linear-gradient(to right, #4caf50 0%, #4caf50 50%, #8bc34a 50%, #8bc34a 100%);
+  }
+}
+
+/* Marco central */
+.marco {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $color-secundario;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: $color-primario;
+}
+
+img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .marco {
+    width: 90%;
+  }
+}
