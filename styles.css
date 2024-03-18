@@ -2,16 +2,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #1e1e1e, #2f2f2f, #454545, #606060, #757575);
-  animation: gradient 10s linear infinite;
+  background: linear-gradient(to right, #87CEEB, #00BFFF, #ADD8E6, #F0F8FF, #FFFFFF, #F0F8FF, #ADD8E6, #00BFFF, #87CEEB);
+  animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
-    background-position: 100% 50%;
+    opacity: 0;
   }
 }
 
@@ -44,54 +47,13 @@ body {
   margin-bottom: 20px;
 }
 
-.whatsapp {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
 .qr {
   width: 150px;
   margin-bottom: 20px;
 }
 
-form {
-  margin-bottom: 20px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-#message-success {
-  color: green;
-  font-weight: bold;
-}
-
-.instagram {
-  font-size: 16px;
-}
-
-.instagram a {
-  color: #007bff;
+.instagram-logo {
+  width: 30px;
+  vertical-align: middle;
 }
 
