@@ -2,20 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #008000, #00FF00, #00FF7F, #00FA9A, #20B2AA, #5F9EA0, #4682B4, #6495ED, #1E90FF, #00BFFF, #87CEEB, #B0E0E6, #ADD8E6, #87CEFA, #00CED1, #20B2AA);
-  animation: gradient 20s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background-color: #21618C;
+  overflow: hidden;
 }
 
 .container {
