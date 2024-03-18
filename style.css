@@ -35,15 +35,22 @@ body {
   }
 }
 
-/* Marco central */
-.marco {
+/* Contenedor */
+.contenedor {
   width: 80%;
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: $color-secundario;
-  border-radius: 10px;
+}
+
+/* Informacion */
+.informacion {
   text-align: center;
+}
+
+img {
+  max-width: 100px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -62,19 +69,11 @@ a {
   color: $color-primario;
 }
 
-img {
-  width: 100px;
-  margin-bottom: 10px;
-}
-
 p {
   font-size: 14px;
   margin-top: 0;
 }
 
-/* Media queries para dispositivos móviles */
-@media only screen and (max-width: 768px) {
-  .marco {
-    width: 90%;
-  }
-}
+/* Formulario */
+form {
+  
