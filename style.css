@@ -21,7 +21,6 @@ body {
   background-color: $color-primario;
   background-image: linear-gradient(to right, $color-primario 0%, $color-primario 50%, #009688 50%, #009688 100%);
   animation: cambio-color 10s infinite;
-  animation: tunel 3s infinite;
 }
 
 @keyframes cambio-color {
@@ -33,18 +32,6 @@ body {
   }
   100% {
     background-image: linear-gradient(to right, #4caf50 0%, #4caf50 50%, #8bc34a 50%, #8bc34a 100%);
-  }
-}
-
-@keyframes tunel {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 0%;
-  }
-  100% {
-    background-position: 0% 0%;
   }
 }
 
@@ -69,4 +56,23 @@ img {
 h1 {
   font-size: 24px;
   margin-bottom: 10px;
+}
 
+h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: $color-primario;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+/* Efecto de desvanecimiento */
+.informacion
