@@ -35,16 +35,14 @@ body {
   }
 }
 
-/* Contenedor */
-.contenedor {
+/* Marco */
+.marco {
   width: 80%;
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-}
-
-/* Informacion */
-.informacion {
+  background-color: $color-secundario;
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -74,6 +72,6 @@ p {
   margin-top: 0;
 }
 
-/* Formulario */
-form {
+/* Formulario
+
   
