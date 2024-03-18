@@ -1,78 +1,79 @@
-/* Variables */
-$color-primario: #007bff;
-$color-secundario: #fff;
-
-/* Estilos generales */
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle, #00008B, #ADD8E6, #FFFFFF, #F0F8FF, #87CEFA, #00BFFF, #4682B4, #0000FF, #1E90FF, #87CEEB, #00008B);
+  background-size: cover;
 }
 
-body {
-  font-family: sans-serif;
-  font-size: 16px;
-  color: $color-secundario;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Fondo */
-.fondo {
-  min-height: 100vh;
-  background-color: $color-primario;
-  background-image: linear-gradient(to right, $color-primario 0%, $color-primario 50%, #009688 50%, #009688 100%);
-  animation: cambio-color 10s infinite;
-}
-
-@keyframes cambio-color {
-  0% {
-    background-image: linear-gradient(to right, $color-primario 0%, $color-primario 50%, #009688 50%, #009688 100%);
-  }
-  50% {
-    background-image: linear-gradient(to right, #009688 0%, #009688 50%, #4caf50 50%, #4caf50 100%);
-  }
-  100% {
-    background-image: linear-gradient(to right, #4caf50 0%, #4caf50 50%, #8bc34a 50%, #8bc34a 100%);
-  }
-}
-
-/* Contenedor */
-.contenedor {
-  width: 90%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Informacion */
-.informacion {
+.content {
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-img {
-  max-width: 100px;
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.titulo {
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-h2 {
+.subtitulo {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-a {
-  display: block;
-  text-decoration: none;
-  color: $color-primario;
+.whatsapp {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-p {
-  font-size: 14px;
-  margin-top: 0;
+.qr {
+  width: 150px;
+  margin-bottom: 20px;
 }
 
-/* Efecto de desvanecimiento */
-.informacion
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#message-success {
+  color: green;
+  font-weight: bold;
+}
