@@ -1,13 +1,9 @@
-/ Script para cambiar el color del fondo de forma aleatoria
+document.getElementById("message-form").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-const colores = [
-  "#007bff",
-  "#009688",
-  "#4caf50",
-  "#8bc34a",
-];
+  // Simplemente muestra un mensaje de éxito
+  document.getElementById("message-success").style.display = "block";
 
-const fondo = document.querySelector(".fondo");
-
-function cambiarColor() {
-  const colorAle
+  // Aquí se puede agregar código para enviar el formulario por correo electrónico
+  // Sin embargo, para hacer esto, se requeriría una implementación del lado del servidor
+});
