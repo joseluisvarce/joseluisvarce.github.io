@@ -2,17 +2,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #00008B, #ADD8E6, #FFFFFF, #F0F8FF, #87CEFA, #00BFFF, #4682B4, #0000FF, #1E90FF, #87CEEB, #00008B);
-  animation: changeColor 10s infinite alternate;
-  background-size: cover;
+  background: linear-gradient(to right, #00008B, #808080, #FFFFFF, #F0F8FF, #87CEFA);
+  background-size: 200% auto;
+  animation: gradient 5s linear infinite;
 }
 
-@keyframes changeColor {
+@keyframes gradient {
   0% {
-    background: #00008B;
+    background-position: 0% 50%;
   }
   100% {
-    background: #0000FF;
+    background-position: 100% 50%;
   }
 }
 
@@ -91,6 +91,11 @@ button:hover {
 .instagram {
   font-size: 16px;
 }
+
+.instagram a {
+  color: #007bff;
+}
+
 
 .instagram a {
   color: #007bff;
